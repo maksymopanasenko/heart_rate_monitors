@@ -3,10 +3,25 @@ $(document).ready(function(){
     speed: 1200,
     prevArrow: '<button type="button" class="slick-prev"><img src="icons/left.png"></button>',
     nextArrow: '<button type="button" class="slick-next"><img src="icons/right.png"></button>',
+    slidesToShow: 1,
+    slidesToScroll: 1,
     responsive: [
       {
         breakpoint: 768,
         settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          arrows: false
+        }
+
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
           dots: true,
           arrows: false
         }
